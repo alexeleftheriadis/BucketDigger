@@ -91,7 +91,7 @@ def text_type_parse(newname, keyword, tag, url):
     for key in keyword:
         ressearch = re.findall(key, filetext)
         if ressearch:
-            print(f'{len(ressearch)} strings containing "{key}" found at {url}.')
+            print(f'{len(ressearch)} strings containing "{key}" found at {url}')
             deleteflag = False
             final_res[str(key)][str(tag)] += 1
     if deleteflag is True:
@@ -187,9 +187,9 @@ def main():
     xml_delete = 'xmldownload.xml'
     remove(xml_delete)
 
-    print(f'Searching for {keyword_list}')
+    print(f'\nSearched for {keyword_list}')
     print(f'End of searching with results: {final_res}.')
-    print("--- %s seconds ---" % (time.time() - start_time))
+    print("--- %s seconds ---" % (round(time.time() - start_time, 2)))
 
 
 if __name__ == "__main__":
