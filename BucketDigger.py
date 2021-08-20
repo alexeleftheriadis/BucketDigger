@@ -155,8 +155,8 @@ def results_update(tag):
 
 def arguments():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--typeofsearch", type=str, help="Type of the file to search",  default=["txt"])
-    parser.add_argument("-ms", "--maxsize", type=int, help="The max size of files", default=[500000000])
+    parser.add_argument("-t", "--typeofsearch", type=str, help="Type of the file to search",  default="txt")
+    parser.add_argument("-ms", "--maxsize", type=int, help="The max size of files", default=500000000)
     parser.add_argument('-url', "--url", type=str, help="The url of the bucket")
     parser.add_argument('-kw', "--keywordfile", type=str, help="The file containing the word(s) to search to")
     args = parser.parse_args()
