@@ -160,7 +160,6 @@ def arguments():
     parser.add_argument('-url', "--url", type=str, help="The URL of the bucket")
     parser.add_argument('-kw', "--keywordfile", type=str, help="The file containing the word(s) to search to")
     args = parser.parse_args()
-
     if args.url.endswith('/') is False:
         args.url = args.url + '/'
     return args
@@ -181,12 +180,10 @@ def main():
             break
         keyword_list.append(line.strip())
         results_update(str(line.strip()))
-
     call_type(args, keyword_list)
     wordfile.close()
     xml_delete = 'xmldownload.xml'
     remove(xml_delete)
-
     print(f'\nSearched for {keyword_list}')
     print(f'End of searching with results: {final_res}.')
     print("--- %s seconds ---" % (round(time.time() - start_time, 2)))
