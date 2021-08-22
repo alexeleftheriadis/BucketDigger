@@ -1,6 +1,6 @@
 ﻿"""""""""""""""""""""""""""""""""""""""
 
-@author:        Eleftheriadis Alexanros
+@author:        Eleftheriadis Alexandros
 @license:       The MIT License (MIT)
 @contact:       aelevthe@protonmail.com
                 github.com/alexeleftheriadis
