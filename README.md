@@ -20,7 +20,6 @@ from source:
 git clone git@github.com:alexeleftheriadis/BucketDigger.git
 cd BucketDigger
 pip3 install -r requirements.txt
-python BucketDigger
 ```
 
 Usage
